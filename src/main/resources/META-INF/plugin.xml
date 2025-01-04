@@ -1,0 +1,51 @@
+<!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
+<idea-plugin>
+    <!-- Unique identifier of the plugin. It should be FQN. It cannot be changed between the plugin versions. -->
+    <id>com.ternaryop.mos</id>
+
+    <!-- Public plugin name should be written in Title Case.
+         Guidelines: https://plugins.jetbrains.com/docs/marketplace/plugin-overview-page.html#plugin-name -->
+    <name>Math On Selection</name>
+
+    <!-- A displayed Vendor name or Organization ID displayed on the Plugins Page. -->
+    <vendor url="https://github.com/dafi/math-on-selection">dafi</vendor>
+
+    <!-- Description of the plugin displayed on the Plugin Page and IDE Plugin Manager.
+         Simple HTML elements (text formatting, paragraphs, and lists) can be added inside of <![CDATA[ ]]> tag.
+         Guidelines: https://plugins.jetbrains.com/docs/marketplace/plugin-overview-page.html#plugin-description -->
+    <description><![CDATA[
+Inspired by the Arithmetic plugin of Sublime Text it is possible to insert the result of mathematical operations into the selection.
+There are two predefined variables
+
+<ul>
+<li>`i` contains the value of the index of the selected row</li>
+<li>`x` contains the numeric value of the selected text</li>
+</ul>
+
+<ul>
+The following functions are available
+<li>the entire Java package <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Math.html">`Math`</a></li>
+<li>the function `format` which is an alias of the function <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html#format(java.lang.String,java.lang.Object...)">`String.format()`</a></li>
+</ul>
+  ]]></description>
+
+    <!-- Product and plugin compatibility requirements.
+         Read more: https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html -->
+    <depends>com.intellij.modules.platform</depends>
+
+    <!-- Extension points defined by the plugin.
+         Read more: https://plugins.jetbrains.com/docs/intellij/plugin-extension-points.html -->
+    <extensions defaultExtensionNs="com.intellij">
+
+    </extensions>
+    <actions>
+        <action
+                id="MathOnSelection"
+                class="com.ternaryop.mos.action.ReplaceTextAction"
+                text="Apply Math Expression"
+                description="Apply math expressions to the selection, multiple carets are supported">
+            <keyboard-shortcut keymap="$default" first-keystroke="ctrl alt I"/>
+<!--            <keyboard-shortcut keymap="Mac OS X 10.5+" first-keystroke="command alt I"/>-->
+        </action>
+    </actions>
+</idea-plugin>
