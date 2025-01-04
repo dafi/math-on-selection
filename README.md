@@ -5,7 +5,7 @@ Inspired by the Arithmetic plugin of Sublime Text it is possible to insert the r
 
 There are two predefined variables
 
-- `i` contains the value of the index of the selected row
+- `i` contains the value of the index of the selected line
 - `x` contains the numeric value of the selected text
 
 

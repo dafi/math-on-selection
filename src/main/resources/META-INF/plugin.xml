@@ -14,16 +14,18 @@
          Simple HTML elements (text formatting, paragraphs, and lists) can be added inside of <![CDATA[ ]]> tag.
          Guidelines: https://plugins.jetbrains.com/docs/marketplace/plugin-overview-page.html#plugin-description -->
     <description><![CDATA[
-Inspired by the Arithmetic plugin of Sublime Text it is possible to insert the result of mathematical operations into the selection.
-There are two predefined variables
+Inspired by the Arithmetic plugin of Sublime Text it is possible to insert the result of mathematical operations into the selection.<br/>
+
+There are two predefined variables<br/>
 
 <ul>
-<li>`i` contains the value of the index of the selected row</li>
+<li>`i` contains the value of the index of the selected line</li>
 <li>`x` contains the numeric value of the selected text</li>
 </ul>
 
+The following functions are available<br/>
+
 <ul>
-The following functions are available
 <li>the entire Java package <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Math.html">`Math`</a></li>
 <li>the function `format` which is an alias of the function <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html#format(java.lang.String,java.lang.Object...)">`String.format()`</a></li>
 </ul>
