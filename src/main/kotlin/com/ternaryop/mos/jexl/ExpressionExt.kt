@@ -9,9 +9,10 @@ import org.apache.commons.jexl3.introspection.JexlPermissions
 fun JexlExpression.resolve(context: JexlContext): String {
     try {
         return evaluate(context).toString()
-    } catch (_: Exception) {}
+    } catch (_: Exception) {
+    }
 
-    return "";
+    return ""
 }
 
 fun createExpression(
@@ -21,10 +22,9 @@ fun createExpression(
         .createNone()
         .methodCall(true)
 
-    val jexl = JexlBuilder()
+    return JexlBuilder()
         .features(features)
         .permissions(JexlPermissions.parse("com.ternaryop.mos.ExportedFunctions"))
         .create()
-
-    return jexl.createExpression(expression)
+        .createExpression(expression)
 }
