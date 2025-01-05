@@ -44,7 +44,7 @@ class ReplaceTextAction : AnAction() {
             val document = editor.document
 
             for ((i, caret) in editor.caretModel.allCarets.withIndex()) {
-                context.update(getSelection(document, caret), i);
+                context.update(getSelection(document, caret), i)
                 replaceSelection(document, caret, expression.resolve(context))
             }
         }
