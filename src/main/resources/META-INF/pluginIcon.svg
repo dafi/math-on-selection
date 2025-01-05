@@ -1,12 +1,11 @@
-<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M32.0845 7.94025V4H24.0203V7.9896H16.029V4H7.91553V7.94025H4V36H16.0044V32.0045C16.0058 30.9457 16.4274 29.9308 17.1766 29.1826C17.9258 28.4345 18.9412 28.0143 20 28.0143C21.0588 28.0143 22.0743 28.4345 22.8234 29.1826C23.5726 29.9308 23.9942 30.9457 23.9956 32.0045V36H36V7.94025H32.0845Z"
-          fill="url(#paint0_linear)"/>
-    <defs>
-        <linearGradient id="paint0_linear" x1="2.94192" y1="4.89955" x2="37.7772" y2="39.7345"
-                        gradientUnits="userSpaceOnUse">
-            <stop offset="0.15937" stop-color="#3BEA62"/>
-            <stop offset="0.5404" stop-color="#3C99CC"/>
-            <stop offset="0.93739" stop-color="#6B57FF"/>
-        </linearGradient>
-    </defs>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(1,0,0,0.792888,0,5.59202)">
+        <path d="M13,7L16,7L16,5L13,5C11.849,5.006 10.754,5.51 10,6.38C9.246,5.51 8.151,5.006 7,5L4,5L4,7L7,7C8.097,7 9,7.903 9,9L9,14L5,14L5,16L9,16L9,23C9,24.097 8.097,25 7,25L4,25L4,27L7,27C8.151,26.994 9.246,26.49 10,25.62C10.754,26.49 11.849,26.994 13,27L16,27L16,25L13,25C11.903,25 11,24.097 11,23L11,16L15,16L15,14L11,14L11,9C11,7.903 11.903,7 13,7Z" style="fill-rule:nonzero;"/>
+    </g>
+    <rect id="_Transparent_Rectangle_" x="0" y="0" width="32" height="32" style="fill:none;"/>
+    <g transform="matrix(1,0,0,1,-0.711488,11.1754)">
+        <text x="18.032px" y="15.794px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:20px;fill:rgb(255,44,0);">x</text>
+    </g>
 </svg>
