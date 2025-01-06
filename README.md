@@ -25,3 +25,9 @@ Increment using the selected numbers
 Add index with padding
 
 <img alt="padding" src="./screenshot/padding.gif"></img>
+
+Build
+==
+
+    ./gradlew buildPlugin
+
