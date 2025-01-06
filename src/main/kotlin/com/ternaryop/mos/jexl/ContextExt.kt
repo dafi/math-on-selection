@@ -1,6 +1,8 @@
 package com.ternaryop.mos.jexl
 
+import com.ternaryop.mos.format
 import org.apache.commons.jexl3.JexlContext
+import org.apache.commons.jexl3.MapContext
 
 fun JexlContext.update(str: String, index: Int) {
     val x = getNumericValue(str)
@@ -18,3 +20,9 @@ fun getNumericValue(str: String): Int {
     return 0
 }
 
+fun defaultContext(): JexlContext = MapContext(
+    mapOf(
+        "format" to ::format,
+        "Math" to Math::class.java
+    )
+)

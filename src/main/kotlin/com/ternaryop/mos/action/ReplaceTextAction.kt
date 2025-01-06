@@ -6,21 +6,17 @@ import com.intellij.openapi.actionSystem.CommonDataKeys.EDITOR
 import com.intellij.openapi.command.WriteCommandAction
 import com.intellij.openapi.editor.Caret
 import com.intellij.openapi.editor.Document
-import com.intellij.openapi.editor.Editor
-import com.intellij.openapi.project.Project
 import com.intellij.openapi.ui.Messages
 import com.intellij.openapi.util.TextRange
-import com.ternaryop.mos.format
 import com.ternaryop.mos.jexl.createExpression
+import com.ternaryop.mos.jexl.defaultContext
 import com.ternaryop.mos.jexl.resolve
 import com.ternaryop.mos.jexl.update
-import org.apache.commons.jexl3.JexlContext
-import org.apache.commons.jexl3.MapContext
 
 class ReplaceTextAction : AnAction() {
     override fun actionPerformed(e: AnActionEvent) {
-        val project: Project? = e.project
-        val editor: Editor? = e.getData(EDITOR)
+        val project = e.project
+        val editor = e.getData(EDITOR)
 
         if (project == null || editor == null) {
             return
@@ -75,11 +71,4 @@ class ReplaceTextAction : AnAction() {
         }
         return ""
     }
-
-    private fun defaultContext(): JexlContext = MapContext(
-        mapOf(
-            "format" to ::format,
-            "Math" to Math::class.java
-        )
-    )
 }
